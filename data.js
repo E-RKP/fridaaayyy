@@ -24,3 +24,34 @@ function creaLibro (titolos, autores,annos){
 }
 
 console.log(creaLibro('Cronaca di una morte annunciata', 'Garcia Marquez', 1984))
+
+const studente = {
+  nome: "Sara",
+  età: 22,
+  indirizzo: {
+    città: "Milano",
+    cap: "20100"
+  }
+};
+
+// Stampa la città dello studente
+
+console.log(studente.indirizzo.città)
+
+const auto = {
+  marca: "Fiat",
+  modello: "Panda",
+  anno: 2020
+};
+
+// Stampa tutte le chiavi e i valori dell’oggetto auto
+
+nkeysauto = Object.keys(auto)
+nvalueauto = Object.values(auto)
+
+for (i=0; i<nkeysauto.length;i++){
+
+  console.log (nkeysauto)
+  console.log(auto[nkeysauto[i]])
+}
+
