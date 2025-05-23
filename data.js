@@ -55,3 +55,60 @@ for (i=0; i<nkeysauto.length;i++){
   console.log(auto[nkeysauto[i]])
 }
 
+const libri = [
+  { titolo: "1984", autore: "Orwell" },
+  { titolo: "Il Signore degli Anelli", autore: "Tolkien" },
+  { titolo: "Il Piccolo Principe", autore: "Saint-Exupéry" }
+];
+
+
+for (i=0; i<libri.length;i++){
+  console.log(libri[i].titolo)
+}
+
+for (i=0; i<libri.length;i++){
+  if (libri[i].titolo === '1984'){
+    console.log(libri[i].autore)
+  }
+}
+
+
+const cane = {
+  nome: "Fido",
+  razza: "Labrador",
+  abbaia: function () {
+    console.log("Bau!");
+  }
+};
+
+cane.abbaia();
+
+const persona = {
+  nome: "Anna",
+  età: 28,
+  città: "Roma"
+};
+
+let nperso = Object.keys(persona)
+console.log(nperso.length)
+
+const originale = {
+  nome: "Luca",
+  hobby: ["calcio", "lettura"],
+  indirizzo: {
+    città: "Milano"
+  }
+};
+
+function deepcopy(oggetto){
+
+  let copy = Object.assign(oggetto)
+  return copy;
+
+}
+
+console.log(deepcopy(originale))
+
+const arr = [["nome", "Maria"], ["età", 32], ["città", "Napoli"]];
+
+
