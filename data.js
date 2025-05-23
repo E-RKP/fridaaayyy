@@ -111,4 +111,35 @@ console.log(deepcopy(originale))
 
 const arr = [["nome", "Maria"], ["età", 32], ["città", "Napoli"]];
 
+function returnArr (array){
+
+  let nuovo = Object.fromEntries(array)
+  return nuovo;
+}
+
+console.log(returnArr(arr))
+
+const dati = {
+  a: 5,
+  b: "test",
+  c: 12,
+  d: null,
+  e: 3
+};
+
+function somma (oggetto){
+
+  let sommaz = 0
+  let ndati = Object.values(dati)
+  for (i=0; i<ndati.length;i++){
+    if (typeof ndati[i] === typeof 1){
+      sommaz = sommaz+ndati[i]
+      
+    }
+  }
+  return sommaz;
+}
+
+console.log(somma(dati))
+
 
